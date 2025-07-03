@@ -69,6 +69,7 @@ feedback-collector-app/
       ```
       node server.js
       ```
+      
 4.View the frontend:
 
 Open frontend/index.html in browser, or serve it using Live Server / deploy both on Render.
