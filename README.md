@@ -36,15 +36,7 @@ A simple full-stack application that allows users to submit and manage feedback.
 
 ## 📂 Folder Structure
 
-feedback-collector-app/
-├── backend/
-│ ├── server.js
-│ └── feedbacks.json
-├── frontend/
-│ ├── index.html
-│ ├── style.css
-│ └── script.js
-└── README.md
+<pre> ```text feedback-collector-app/ ├── backend/ │ ├── server.js │ └── feedbacks.json ├── frontend/ │ ├── index.html │ ├── style.css │ └── script.js └── README.md ``` </pre>
 
 
 ---
