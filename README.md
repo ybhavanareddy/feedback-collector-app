@@ -6,17 +6,20 @@ A simple full-stack application that allows users to submit and manage feedback.
 
 ## 🌐 Live Demo
 
-🔗 https://feedback-collector-app-rdfh.onrender.com/
+🔗 [Live App on Render](https://feedback-collector-app-rdfh.onrender.com/)
+
+---
 
 ## 🚀 Features
 
-- Collect user feedback with name and message
-- Display all feedback dynamically
-- Delete feedback with confirmation
-- Stylish UI with animations and dark mode 🌙
-- Toast notifications for feedback actions
-- Data stored permanently in `feedbacks.json` file
-- Fully responsive design (mobile-first)
+- 📝 Collect user feedback with name and message
+- 📃 Display all feedback dynamically
+- ❌ Delete feedback with confirmation popup
+- 🌙 Dark mode toggle
+- ✅ Toast notifications on actions (submit/delete)
+- 💾 Feedback stored in a `feedbacks.json` file
+- 📱 Fully responsive (mobile-first design)
+- 🎨 Animated UI with icons
 
 ---
 
@@ -24,21 +27,28 @@ A simple full-stack application that allows users to submit and manage feedback.
 
 **Frontend:**
 - HTML
-- CSS (with media queries, animations, dark mode)
-- JavaScript (DOM manipulation, fetch API)
+- CSS (Media Queries, Animations, Dark Mode)
+- JavaScript (DOM, Fetch API)
 
 **Backend:**
 - Node.js
 - Express.js
-- File-based storage using `fs` module
+- File system storage using `fs` module
 
 ---
 
 ## 📂 Folder Structure
 
-<pre> ```text 
-   feedback-collector-app/ ├── backend/ │ ├── server.js │ └── feedbacks.json ├── frontend/ │ ├── index.html │ ├── style.css │ └── script.js └── README.md 
-   ``` </pre>
+```text
+feedback-collector-app/
+├── backend/
+│   ├── server.js
+│   └── feedbacks.json
+├── frontend/
+│   ├── index.html
+│   ├── style.css
+│   └── script.js
+└── README.md
 
 
 
