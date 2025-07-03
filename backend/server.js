@@ -4,23 +4,25 @@ const bodyParser = require("body-parser");
 const fs = require("fs");
 const path = require("path");
 
-const filePath = path.join(__dirname, "feedbacks.json");
-
-// Start express app
 const app = express();
 const PORT = process.env.PORT || 3000;
+
+// ✅ Serve frontend (from one level up)
+const frontendPath = path.join(__dirname, "..", "frontend");
+app.use(express.static(frontendPath));
+
+// Serve index.html on root
+app.get("/", (req, res) => {
+  res.sendFile(path.join(frontendPath, "index.html"));
+});
 
 // Middleware
 app.use(cors());
 app.use(bodyParser.json());
 
-// Serve frontend static files
-app.use(express.static(path.join(__dirname, "frontend")));
-app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "frontend", "index.html"));
-});
+// Feedbacks JSON file
+const filePath = path.join(__dirname, "feedbacks.json");
 
-// Functions to handle feedback file
 function readFeedbacks() {
   if (!fs.existsSync(filePath)) return [];
   const data = fs.readFileSync(filePath);
