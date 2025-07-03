@@ -54,12 +54,18 @@ feedback-collector-app/
 1. **Clone the repo:**
    ```bash
    git clone https://github.com/your-username/feedback-collector-app.git
-   cd feedback-collector-app
+   cd feedback-collector-app```
+2,Install backend dependencies:
+   ```
+   cd backend
+   npm install
+   ```
+3.Start the server:
+   ```
+   node server.js
+   ```
+4.View the frontend:
 
-cd backend
-npm install
-node server.js
-View the frontend:
 Open frontend/index.html in browser, or serve it using Live Server / deploy both on Render.
 
 📦 Deployment
