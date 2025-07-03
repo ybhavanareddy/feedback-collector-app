@@ -50,7 +50,7 @@ feedback-collector-app/
 │   └── script.js
 └── README.md
 
-
+```
 
 ---
 
@@ -66,9 +66,9 @@ feedback-collector-app/
    npm install
    ```
 3.Start the server:
-   ```
-   node server.js
-   ```
+      ```
+      node server.js
+      ```
 4.View the frontend:
 
 Open frontend/index.html in browser, or serve it using Live Server / deploy both on Render.
@@ -79,5 +79,7 @@ Frontend: Static HTML/CSS/JS — hosted on Render
 
 Backend: Node.js Express server — hosted on Render with static serving for frontend
 
+
 👤 Author
+
 Bhavana Yatham
